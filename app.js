@@ -70,9 +70,9 @@ app.use(bodyParser.json());
     console.log(req.body.input)
 
 
-    const accountSid = 'AC20de111adfe6b252dd11ced3342cae0c';
+   const accountSid = 'AC3d974c2c34b54fbe38dfa17ce838a109';
     //  twilio token from twilio dashboard/console
-    const authToken = 'db02e5479632e51b312c24f74f403ec3';
+    const authToken = 'a632fecd43fe49453b00844043562512';
     const client = require('twilio')(accountSid, authToken);
     
     client.messages.create({
