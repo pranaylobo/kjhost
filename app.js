@@ -16,7 +16,7 @@ const router = express.Router();
 app.use(function (req, res, next) {
 
   // Website you wish to allow to connect
-  res.setHeader('Access-Control-Allow-Origin', 'http://127.0.0.1:5501');
+  res.setHeader('Access-Control-Allow-Origin', 'https://kashish-jain-kj.github.io/Host/');
 
   // Request methods you wish to allow
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -33,7 +33,7 @@ app.use(function (req, res, next) {
 });
 
 app.use(cors({
-origin: ['http://127.0.0.1:5501','http://127.0.0.1:5501'],
+origin: ['https://kashish-jain-kj.github.io/Host/','https://kashish-jain-kj.github.io/Host/'],
 credentials: true
 }));
 
