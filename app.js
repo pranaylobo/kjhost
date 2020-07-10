@@ -67,22 +67,22 @@ app.use(bodyParser.json());
  {
     // your code 
 
+   // your code 
+
     console.log(req.body.input)
+    console.log(req.body.body1)
 
 
-   const accountSid = 'AC3d974c2c34b54fbe38dfa17ce838a109';
+
+    const accountSid = 'ACb16b6ea08a422a158d2863a102b19d5c';
     //  twilio token from twilio dashboard/console
-    const authToken = 'a632fecd43fe49453b00844043562512';
+    const authToken = '7584452ffaf9bee7efa98607c9054942';
     const client = require('twilio')(accountSid, authToken);
     
-    client.messages.create({
-    // twilio no.
-      from: 'whatsapp:+14155238886',
-    // consumer no. 
-      to: 'whatsapp:'+req.body.input+'',
-     // message
-      body:req.body.body1
-    }).then(message => console.log(message.sid));
+      client.validationRequests
+      .create({friendlyName: 'xxx', phoneNumber:'+919022680671'})
+      .then(validation_request => console.log(validation_request));
+          
     
 
 
